@@ -1,0 +1,39 @@
+{
+  "name": "portfolio",
+  "homepage": "https://chaokevin.com/",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.21.0",
+    "font-awesome": "^4.7.0",
+    "gh-pages": "^1.1.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-header": "^1.8.9",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "jquery": "^3.2.1",
+    "jquery.easing": "^1.4.1",
+    "react": "^16.2.0",
+    "react-bootstrap": "^0.31.5",
+    "react-dom": "^16.2.0",
+    "react-parallax": "^1.5.1",
+    "react-scroll": "^1.7.4",
+    "react-transition-group": "^2.2.1",
+    "simple-line-icons": "^2.4.1"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

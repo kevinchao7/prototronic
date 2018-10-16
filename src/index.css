@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+html,
+body,
+#root,
+div[data-reactroot] {
+  font-family: Catamaran;
+}
+a:hover {
+ cursor:pointer;
+}
+
+.btn-about{
+  background-color:#ffd700 !important;
+  border-color:#ffd700 !important;
+  color:black !important;
+}
+.myName{
+  text-shadow: 2px 2px 4px #000000 !important;
+  color: white !important;
+}
+.myTitle{
+  text-shadow: 2px 2px 4px #000000 !important;
+}
+.aboutTitle{
+  text-align:center !important;
+}
+.bg-services{
+  background: #343a40 !important;
+}
+.portfolio-image{
+  max-width:200px;
+  margin-bottom:10px;
+}
+.homeImg{
+  /*opacity:0.75;*/
+  max-width:2000px;
+  background-position:left;
+}
+.emailIcon{
+  margin-left:15px !important;
+}
+@media (min-width: 770px) {
+  .portfolio-image{
+    margin-right:60px;
+    float:left;
+  }
+  .aboutTitle{
+    text-align:justify !important;
+  }
+}
+@media (max-width: 991px) {
+  .homepage{
+    padding-bottom: 14em;
+    background-position:left;
+  }
+  .homeImg{
+    /*opacity:0.75;*/
+    max-width:1200px;
+  }
+}
+@media (max-width: 1300px) {
+  .homeImg{
+    /*opacity:0.75;*/
+    max-width:1400px;
+  }
+}
