@@ -100,7 +100,7 @@ h6 {
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: rgba(29, 128, 159, 0.75) !important;
+  background: rgba(251, 164, 13, 0.75) !important;
   border-left: 1px solid rgba(255, 255, 255, 0.1); }
 
 .sidebar-nav {
@@ -128,7 +128,7 @@ h6 {
 
 .sidebar-nav > .sidebar-brand {
   font-size: 1.2rem;
-  background: rgba(52, 58, 64, 0.1);
+  background: rgba(251, 164, 13, 0.1);
   height: 80px;
   line-height: 50px;
   padding-top: 15px;
@@ -159,13 +159,18 @@ h6 {
   height: 50px;
   text-align: center;
   color: #fff;
-  background: rgba(255, 215, 0, 0.5);
+  background: rgba(251, 164, 13, 0.5);
   line-height: 50px;
   z-index: 999; }
   .menu-toggle:focus, .menu-toggle:hover {
     color: #fff; }
   .menu-toggle:hover {
-    background: #1D809F; }
+    background: #FBA40D; }
+
+.bg-about{
+  background: url(../img/BG-Prototronic-2nd-Page.jpg);
+  background-size:cover;
+}
 
 .service-icon {
   background-color: #fff;
@@ -234,9 +239,10 @@ h6 {
         -webkit-clip-path: inset(2rem);
         clip-path: inset(2rem); }
       .portfolio-item:hover .caption {
-        background-color: rgba(29, 128, 159, 0.9);
+        background-color: rgba(251, 164, 13, 0.9);
         -webkit-clip-path: inset(2rem);
         clip-path: inset(2rem); } }
+
 
 footer.footer {
   padding-top: 5rem;

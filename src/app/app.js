@@ -133,9 +133,9 @@ class App extends Component {
           <div className="overlay"></div>
         </header> */}
 
-        <Parallax strength={300} className='homepage'>
+        <Parallax strength={400} className='homepage'>
           <Background>
-            <img className='homeImg' src="img/Background_1080.jpg"/>
+            <img className='homeImg' src="img/BG-Prototronic-3.jpg"/>
           </Background>
           <header className="masthead d-flex" id='header'>
             <div className="container text-center my-auto">
@@ -150,16 +150,19 @@ class App extends Component {
         </Parallax>
 
         {/*<!-- Company Background -->*/}
-        <section className="content-section bg-light" id="about">
+        <section className="content-section bg-about" id="about">
           <div className="container text-center">
             <div className="row">
               <div className="col-lg-10 mx-auto">
-                <img className="img-fluid rounded portfolio-image" src="img/Kevin_13_small.jpg"></img>
-                <h2 className='aboutTitle'>Engineer & Developer,</h2>
-                <p className="lead mb-5" style={{'text-align':'justify'}}>Kevin holds a bachelors of  science degree in Mechanical Engineering from California State University, Long Beach and a Full Stack Web Development Certificate from University of California, Irvine. He is an active mechanical engineer in the aerospace field. He also designs and builds full stack web applications from scratch with the latest technologies. On his spare time, he enjoys traveling, basketball, and indoor rock climbing.</p>
+                <div>
+                  {/* <img className="img-fluid rounded portfolio-image" src="img/board.jpg"></img> */}
+                    <img className="img-fluid rounded portfolio-image" src="img/machining.jpg"></img>
+                </div>
+                <h2 className='aboutTitle'>About Us</h2>
+                <p className="lead mb-5" style={{'text-align':'justify'}}>Prototronic Inc. provides product design, automation, pcb design and software engineering services. We pride ourselves on the quality of our work. Prototronic Inc. contains expertise in various engineering disciplines such as Mechanical, Electrical and Software.</p>
               </div>
               <div className="col-lg-10 mx-auto">
-                <Link className="btn btn-dark btn-xl" style={{clear:'both'}} activeClass="active" to="services" spy={true} smooth={true} duration={750}>What Kevin Offers</Link>
+                <Link className="btn btn-dark btn-xl" style={{clear:'both'}} activeClass="active" to="services" spy={true} smooth={true} duration={750}>What Prototronic Offers</Link>
               </div>
 
             </div>
@@ -171,44 +174,44 @@ class App extends Component {
           <div className="container">
             <div className="content-section-heading">
               <h3 className="text-secondary mb-0">Services</h3>
-              <h2 className="mb-5">What Kevin Offers</h2>
+              <h2 className="mb-5">What Prototronic Offers</h2>
             </div>
             <div className="row">
               <div className="col-lg-3 col-md-6 mb-5 mb-lg-0">
                 <span className="service-icon rounded-circle mx-auto mb-3">
-                  <i className="icon-screen-smartphone"></i>
+                  <i className="icon-bulb"></i>
                 </span>
                 <h4>
-                  <strong>Responsive</strong>
+                  <strong>Product Design</strong>
                 </h4>
-                <p className="text-faded mb-0">Mobile responsive applications that looks great on any screen size!</p>
+                <p className="text-faded mb-0">Concepts, detailed design, design for manufacturing and sustaining.</p>
               </div>
               <div className="col-lg-3 col-md-6 mb-5 mb-lg-0">
                 <span className="service-icon rounded-circle mx-auto mb-3">
-                  <i className="icon-layers"></i>
+                  <i className="icon-wrench"></i>
                 </span>
                 <h4>
-                  <strong>Full Stack</strong>
+                  <strong>Prototyping</strong>
                 </h4>
-                <p className="text-faded mb-0">MongoDB/Sequelize, Express JS, Node JS, and React JS.</p>
+                <p className="text-faded mb-0">CNC Mill/Lathe, welding, 20in^3 3D PLA printing, and pcb prototyping.</p>
               </div>
               <div className="col-lg-3 col-md-6 mb-5 mb-md-0">
                 <span className="service-icon rounded-circle mx-auto mb-3">
-                  <i className="icon-calculator"></i>
+                  <i className="icon-equalizer"></i>
                 </span>
                 <h4>
-                  <strong>Algorithms</strong>
+                  <strong>Automation</strong>
                 </h4>
-                <p className="text-faded mb-0">Working mechanical engineer. Solves math & physics problems daily.</p>
+                <p className="text-faded mb-0">Automating repitious manual labor with stepper motors or robotics.</p>
               </div>
               <div className="col-lg-3 col-md-6">
                 <span className="service-icon rounded-circle mx-auto mb-3">
-                  <i className="icon-diamond"></i>
+                  <i className="icon-screen-desktop"></i>
                 </span>
                 <h4>
-                  <strong>Polishing & TouchUps</strong>
+                  <strong>PCB/Electronic/Software</strong>
                 </h4>
-                <p className="text-faded mb-0">Polishing and touching up existing web applications.</p>
+                <p className="text-faded mb-0">PCB services, electronics, and software design.</p>
               </div>
             </div>
           </div>
@@ -246,47 +249,47 @@ class App extends Component {
             </div>
             <div className="row no-gutters">
               <div className="col-lg-6">
-                <a className="portfolio-item" target='_blank' href="https://uptobudget.herokuapp.com">
+                <a className="portfolio-item" target='_blank' href="#">
                   <span className="caption">
                     <span className="caption-content">
-                      <h2>Up to Budget</h2>
-                      <p className="mb-0">A financial budgeting web app that utilizes the 50% fixed cost, 20% financial goals, and 30% flexible spending principle. This app uses sequlize, express, node, react, google oauth, passportjs, and express sessions.</p>
+                      <h2>Machining prototypes</h2>
+                      <p className="mb-0">Utilizing cnc mills/lathes to create a functional prototype.</p>
                     </span>
                   </span>
-                  <img className="img-fluid" src="img/uptobudget.png" alt=""></img>
+                  <img className="img-fluid" src="img/1.jpg" alt=""></img>
                 </a>
               </div>
               <div className="col-lg-6">
-                <a className="portfolio-item" target='_blank' href="https://kevinchao7.github.io/RPS-Multiplayer/">
+                <a className="portfolio-item" target='_blank' href="#">
                   <span className="caption">
                     <span className="caption-content">
-                      <h2>Rock Paper Scissor Multi-Player</h2>
-                      <p className="mb-0">A PVP rock paper scissor web application. This app uses materialize css and firebase.</p>
+                      <h2>Leaded Medical Enclosure</h2>
+                      <p className="mb-0">A product design for a leaded enclosure QC medical system.</p>
                     </span>
                   </span>
-                  <img className="img-fluid" src="img/rps.png" alt=""></img>
+                  <img className="img-fluid" src="img/Product_1.jpg" alt=""></img>
                 </a>
               </div>
               <div className="col-lg-6">
-                <a className="portfolio-item" target='_blank' href="https://kevinchao7.github.io/spaceinvader/">
+                <a className="portfolio-item" target='_blank' href="#">
                   <span className="caption">
                     <span className="caption-content">
-                      <h2>Space Invaders Web Game</h2>
-                      <p className="mb-0">Space Invaders made with vanilla javascript.</p>
+                      <h2>Tripod Head design</h2>
+                      <p className="mb-0">A hydraulic locking camera tripod head design.</p>
                     </span>
                   </span>
-                  <img className="img-fluid" src="img/spaceinvader.png" alt=""></img>
+                  <img className="img-fluid" src="img/Product2.jpg" alt=""></img>
                 </a>
               </div>
               <div className="col-lg-6">
-                <a className="portfolio-item" target='_blank' href="https://medaman.github.io/dancing-salmon">
+                <a className="portfolio-item" target='_blank' href="#">
                   <span className="caption">
                     <span className="caption-content">
-                      <h2>Dancing Salmon</h2>
-                      <p className="mb-0">A search music discography web application utilizing discogs API and google firebase!</p>
+                      <h2>PCB Design</h2>
+                      <p className="mb-0">Custom pcb and routing design in minutes.</p>
                     </span>
                   </span>
-                  <img className="img-fluid" src="img/dancing-salmon.png" alt=""></img>
+                  <img className="img-fluid" src="img/Product3.jpg" alt=""></img>
                 </a>
               </div>
             </div>
@@ -311,7 +314,7 @@ class App extends Component {
         {/* <!-- Footer --> */}
         <footer className="footer text-center">
           <div className="container">
-            <h5>Connect with Kevin</h5><br></br>
+            <h5>Connect with Prototronic Inc.</h5><br></br>
             <ul className="list-inline mb-5">
               <li className="list-inline-item">
                 <a className="social-link rounded-circle text-white mr-3" target="_blank" href="https://www.linkedin.com/in/kevin-chao-eit-b98a5592/">
@@ -329,7 +332,7 @@ class App extends Component {
                 </a>
               </li>
             </ul>
-            <p className="text-muted small mb-0">Copyright &copy; ChaoKevin.com 2017</p>
+            <p className="text-muted small mb-0">Copyright &copy; Prototronic.com 2018</p>
           </div>
         </footer>
 
